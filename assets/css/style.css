@@ -1,0 +1,205 @@
+/*
+Title: Tic-Tac-Toe
+Version: 1.0
+Author: Marine-Lou
+Design: Marine-Lou
+Last Update: 28-12-2022
+
+/ STRUCTURE /
+main
+    header
+    section #gridSection
+        article #gridArticle
+            div #rowAdiv .rowDiv
+                div #Aa .gridDiv
+                div #Ab .gridDiv
+                div #Ac .gridDiv
+            div #rowBdiv .rowDiv
+                div #Ba .gridDiv
+                div #Bb .gridDiv
+                div #Bc .gridDiv
+            div #rowCdiv .rowDiv
+                div #Ca .gridDiv
+                div #Cb .gridDiv
+                div #Cc .gridDiv
+        article #btnArticle
+
+[-> Sorted by Order
+
+/ TYPE /
+
+/ COLORS /
+Black #000000 rgba(0, 0, 0, 1)
+White #ffffff rgba(255, 255, 255, 1)
+Blue #12299b rgba(18, 41, 155,1)
+Yellow #cbe821 rgba(203, 232, 33,1)
+
+*/
+
+/* GENERAL */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    background-image: url("../img/tic-tac-toe_bg.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+}
+.dNone {
+    display: none !important;
+}
+.disabled {
+    pointer-events: none;
+}
+header, main, #gridSection, .gridDiv, #btnArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gridArticle, #playersBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXT STYLE */
+h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+}
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+p {
+    text-align: center;
+    font-size: 12px;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+/*HEADER*/
+header {
+    height: 100px;
+    padding: 75px 0px 50px 0px;
+}
+header img {
+    width: 450px;
+}
+
+/* SECTION GRID */
+#gridSection {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: fit-content;
+    padding: 50px 75px 50px 75px;
+    border-radius: 50px;
+    box-shadow: -1px 1px 15px rgba(255, 255, 255, 0.5);;
+}
+.gridDiv {
+    width: 6rem;
+    height: 6rem;
+}
+.signs {
+    width: 60%;
+}
+
+/*BORDER*/
+.borderLR {
+    border-left: solid #ffffff 2pt;
+    border-right: solid #ffffff 2pt;
+}
+.borderTB {
+    border-top: solid #ffffff 2pt;
+    border-bottom: solid #ffffff 2pt;
+}
+.border {
+    border: solid #ffffff 2pt;
+}
+
+/* BUTTONS */
+.styleBtn {
+    display: flex;
+    background-color: white;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    height: 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+#playBtn, #replayBtn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 120px;
+}
+#soloBtn {
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 80px;
+    margin-right: 3px;
+}
+#duoBtn {
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+    width: 80px;
+}
+#playBtn:hover, #soloBtn:hover, #duoBtn:hover {
+    background-color: white;
+    color: #cbe821;
+    border: solid #000000 1pt;
+    -webkit-box-shadow: 0 0 0 3px #cbe821 inset !important;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+}
+#playBtn:active, #soloBtn:active, #duoBtn:active {
+    background-color: #cbe821;
+    color: black;
+}
+#replayBtn {
+    background-color: #cbe821;
+}
+#replayBtn:hover {
+    background-color: black;
+    border: solid #cbe821 1pt;
+    color: #cbe821;
+    -webkit-box-shadow: 0 0 0 3px #cbe821 inset !important;
+}
+#replayBtn:active {
+    background-color: white;
+    color: black;
+    border: none;
+}
+h3#whoseTurn {
+    margin-top: 25px;
+}
+
+/* ENDINGS */
+.bgYellow {
+    background-color: rgba(203, 232, 33,0.7)!important;
+}
+.colorYellow {
+    color: #cbe821;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+@media all and (max-width: 768px) {
+    footer p {
+        width: 450px;
+        margin: auto;
+    }
+}

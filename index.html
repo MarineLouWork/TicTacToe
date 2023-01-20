@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Tic Tac Toe" name="Let's Play"/>
+    <meta content="width=device_width, initial-scale=1.0" name="viewport"/>
+
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+
+    <!-- TYPO -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+<main>
+    <header>
+        <img alt="logo tic tac toe" id="logo" src="assets/img/tic-tac-toe_logo.png" title="logo tic tac toe">
+    </header>
+    <section id="gridSection">
+        <article id="gridArticle">
+            <div class="rowDiv" id="rowAdiv">
+                <div class="gridDiv disabled" id="Aa" onclick="play(this)">
+                    <img alt="round" class="signs" src="assets/img/tic-tac-toe_o.png" title="round">
+                </div>
+                <div class="gridDiv disabled borderTB" id="Ab" onclick="play(this)">
+                    <img alt="cross" class="signs" src="assets/img/tic-tac-toe_x.png" title="cross">
+                </div>
+                <div class="gridDiv disabled" id="Ac" onclick="play(this)">
+                    <img alt="round" class="signs" src="assets/img/tic-tac-toe_o.png" title="round">
+                </div>
+            </div>
+            <div class="rowDiv" id="rowBdiv">
+                <div class="gridDiv disabled borderLR" id="Ba" onclick="play(this)">
+                    <img alt="cross" class="signs" src="assets/img/tic-tac-toe_x.png" title="cross">
+                </div>
+                <div class="gridDiv disabled border" id="Bb" onclick="play(this)">
+                    <img alt="round" class="signs" src="assets/img/tic-tac-toe_o.png" title="round">
+                </div>
+                <div class="gridDiv disabled borderLR" id="Bc" onclick="play(this)">
+                    <img alt="cross" class="signs" src="assets/img/tic-tac-toe_x.png" title="cross">
+                </div>
+            </div>
+            <div class="rowDiv" id="rowCdiv">
+                <div class="gridDiv disabled" id="Ca" onclick="play(this)">
+                    <img alt="round" class="signs" src="assets/img/tic-tac-toe_o.png" title="round">
+                </div>
+                <div class="gridDiv disabled borderTB" id="Cb" onclick="play(this)">
+                    <img alt="cross" class="signs" src="assets/img/tic-tac-toe_x.png" title="cross">
+                </div>
+                <div class="gridDiv disabled" id="Cc" onclick="play(this)">
+                    <img alt="round" class="signs" src="assets/img/tic-tac-toe_o.png" title="round">
+                </div>
+            </div>
+        </article>
+        <article id="btnArticle">
+            <div class="dNone" id="playersBtn">
+                <button class="styleBtn" id="soloBtn" onclick="soloPlay()" type="button"><h3>Solo</h3></button>
+                <button class="styleBtn" id="duoBtn" onclick="duoPlay()" type="button"><h3>Duo</h3></button>
+            </div>
+            <button class="styleBtn" id="playBtn" onclick="playBeginning()" type="button"><h3>Play</h3></button>
+            <h3 class="dNone" id="whoseTurn"></h3>
+            <button class="styleBtn dNone" id="replayBtn" onclick="replay()" type="button"><h3>Replay</h3></button>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>© Copyright 2023 Marine Lou</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
