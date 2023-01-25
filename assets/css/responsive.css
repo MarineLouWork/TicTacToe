@@ -1,0 +1,21 @@
+/*
+Title: Tic-Tac-Toe
+Version: 1.0
+Author: Marine-Lou
+Design: Marine-Lou
+Last Update: 28-12-2022
+
+ */
+
+@media all and (max-width: 768px) {
+    header img {
+        width: 350px;
+    }
+    #gridSection {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: fit-content;
+        padding: 50px 25px 50px 25px;
+        border-radius: 50px;
+        box-shadow: -1px 1px 15px rgb(255 255 255 / 50%);
+    }
+}
