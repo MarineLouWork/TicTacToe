@@ -20,7 +20,7 @@ Last Update: 28-12-2022
     }
 }
 
-@media all and (max-height: 730px) {
+@media all and (max-height: 770px) {
     footer {
         position: relative;
         top: 15px;
