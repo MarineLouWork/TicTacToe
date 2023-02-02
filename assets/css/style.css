@@ -206,9 +206,7 @@ footer {
     bottom: 15px;
     width: 100%;
 }
-@media all and (max-width: 768px) {
-    footer p {
-        width: fit-content;
-        margin: auto;
-    }
+footer p {
+    width: fit-content;
+    margin: auto;
 }

@@ -19,3 +19,12 @@ Last Update: 28-12-2022
         box-shadow: -1px 1px 15px rgb(255 255 255 / 50%);
     }
 }
+
+@media all and (max-height: 730px) {
+    footer {
+        position: relative;
+        top: 15px;
+        bottom: 0;
+        margin-bottom: 15px;
+    }
+}
